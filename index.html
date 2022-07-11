@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<style>
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+.form {
+    width: 80%;
+}
+.error {
+    font-size: 0.8rem;
+    height: 32px;
+    padding-top: 4px;
+    margin-left: 16px;
+}
+
+input:invalid {
+    box-shadow: 0 0 0 0.25rem rgba(220, 93, 93, 0.25)!important;
+    border-color: #fe8686!important;
+}
+
+</style>
+
+<body>
+
+    <div class="container" >
+        <div class="mx-auto shadow p-3 float align-middle" style="max-width: 600px;">
+        <form action="" autocomplete="off">
+            <div class="form">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" class="rounded-pill form-control" autocomplete="off">
+                <div id="first-name-error" class="error">This is an error</div>
+            </div>
+            <div class="form ">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" class="rounded-pill form-control" autocomplete="off">
+                <div id="last-name-error" class="error"></div>
+            </div>
+            <div class="form ">
+                <label for="contact-number">Contact Number</label>
+                <input type="text" id="contact-number" class="rounded-pill form-control" autocomplete="off">
+                <div id="contact-number-error" class="error"></div>
+            </div>
+            <div class="form ">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="rounded-pill form-control" autocomplete="off">
+                <div id="password-error" class="error"></div>
+            </div>
+            <div class="form ">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" class="rounded-pill form-control" autocomplete="off">
+                <div id="confirm-password-error" class="error"></div>
+            </div>
+            <button type="submit" class="btn btn-primary rounded-pill">Submit</button>
+        </form>
+    </div>
+    </div>
+
+    <script>
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
